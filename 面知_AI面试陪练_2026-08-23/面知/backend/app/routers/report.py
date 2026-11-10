@@ -6,18 +6,25 @@ from ..models import Interview, Answer
 from ..schemas import ReportOut, AnswerOut, Dimension, InterviewHistory
 from ..services.analysis import grade_from_score, build_summary
 from ..services.pdf import generate_report_pdf
+from ..services.auth import get_current_user
 
 router = APIRouter(prefix="/api", tags=["report"])
 
 
+def _scope(db: Session, user_id: str | None):
+    """按当前用户过滤已作答的面试；未登录时返回全部（共享演示数据）。"""
+    q = db.query(Interview).join(Answer).distinct()
+    if user_id:
+        q = q.filter(Interview.user_id == user_id)
+    return q
+
+
 @router.get("/report/recent", response_model=ReportOut)
-def get_recent_report(db: Session = Depends(get_db)):
+def get_recent_report(db: Session = Depends(get_db), current_user: str | None = Depends(get_current_user)):
     """最近一次「已作答」面试的报告（报告页无 id 时默认展示）。
     注意：必须声明在 /report/{interview_id} 之前，避免 'recent' 被解析为 id。"""
     interview = (
-        db.query(Interview)
-        .join(Answer)
-        .distinct()
+        _scope(db, current_user)
         .order_by(Interview.date.desc(), Interview.id.desc())
         .first()
     )
@@ -72,12 +79,10 @@ def get_report_pdf(interview_id: str, db: Session = Depends(get_db)):
 
 
 @router.get("/interviews", response_model=list[InterviewHistory])
-def list_interviews(db: Session = Depends(get_db)):
-    """历史记录列表：只含已作答的完成记录，按新到旧排列（最新在上）。"""
+def list_interviews(db: Session = Depends(get_db), current_user: str | None = Depends(get_current_user)):
+    """历史记录列表：只含已作答的完成记录，按新到旧排列（最新在上）。登录后仅看自己的记录。"""
     rows = (
-        db.query(Interview)
-        .join(Answer)
-        .distinct()
+        _scope(db, current_user)
         .order_by(Interview.date.desc(), Interview.id.desc())
         .all()
     )

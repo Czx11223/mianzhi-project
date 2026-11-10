@@ -6,12 +6,13 @@ from ..models import Answer, Interview, Question
 from ..schemas import AnswerIn, AnswerOut
 from ..services.llm import comment as llm_comment
 from ..services.data import SEED_QUESTIONS
+from ..services.auth import get_current_user
 
 router = APIRouter(prefix="/api", tags=["answer"])
 
 
 @router.post("/answer", response_model=AnswerOut)
-def submit_answer(payload: AnswerIn, db: Session = Depends(get_db)):
+def submit_answer(payload: AnswerIn, db: Session = Depends(get_db), current_user: str | None = Depends(get_current_user)):
     if not payload.answer.strip():
         raise HTTPException(422, "作答内容不能为空")
     # 关联面试会话：
@@ -30,10 +31,12 @@ def submit_answer(payload: AnswerIn, db: Session = Depends(get_db)):
             .first()
         )
     if not interview:
-        interview = Interview(id=str(uuid.uuid4()), job_name="模拟面试", mode=payload.mode)
+        interview = Interview(id=str(uuid.uuid4()), user_id=current_user or "", job_name="模拟面试", mode=payload.mode)
         db.add(interview)
         db.commit()
         db.refresh(interview)
+    # 登录态下把作答归属到当前用户（匿名则为空串=共享演示数据）
+    interview.user_id = current_user or ""
 
     q = db.query(Question).filter(Question.id == payload.question_id).first()
     ref = q.reference_answer if q else next((s["reference_answer"] for s in SEED_QUESTIONS if s["id"] == payload.question_id), "")
@@ -51,6 +54,7 @@ def submit_answer(payload: AnswerIn, db: Session = Depends(get_db)):
     if answer is None:
         answer = Answer(id=str(uuid.uuid4()), interview_id=interview.id, question_id=payload.question_id)
         db.add(answer)
+    answer.user_id = current_user or ""
     answer.question = question_text
     answer.answer = payload.answer
     answer.score = res["score"]

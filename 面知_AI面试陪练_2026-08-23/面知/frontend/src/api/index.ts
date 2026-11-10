@@ -9,10 +9,22 @@ import * as mock from '@/mock'
 const USE_BACKEND = (import.meta as any).env?.VITE_USE_BACKEND === 'true' || false
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(`/api${path}`, {
-    headers: { 'Content-Type': 'application/json' },
-    ...init
-  })
+  // 120s 超时：大模型点评可能较慢，但不允许无限等待造成"卡死"假象
+  const ctrl = new AbortController()
+  const timer = setTimeout(() => ctrl.abort(), 120000)
+  let res: Response
+  try {
+    res = await fetch(`/api${path}`, {
+      headers: { 'Content-Type': 'application/json' },
+      signal: ctrl.signal,
+      ...init
+    })
+  } catch (e: any) {
+    clearTimeout(timer)
+    if (e?.name === 'AbortError') throw Object.assign(new Error('请求超时（120s），请重试'), { status: 0 })
+    throw e
+  }
+  clearTimeout(timer)
   if (!res.ok) {
     const err = new Error(`API ${res.status}`) as Error & { status: number }
     err.status = res.status
@@ -127,13 +139,48 @@ export const api = {
   // 模型设置
   async getSettings(): Promise<ModelSettings> {
     if (!USE_BACKEND) {
-      return { modelName: 'deepseek-chat', apiKey: '', baseUrl: 'https://api.deepseek.com/v1', temperature: 0.7, maxTokens: 2048 }
+      return {
+        modelName: 'deepseek-chat', apiKey: '', baseUrl: 'https://api.deepseek.com/v1',
+        temperature: 0.7, maxTokens: 2048
+      }
     }
     return request<ModelSettings>('/user/settings')
   },
   async saveSettings(s: ModelSettings): Promise<void> {
     if (!USE_BACKEND) return
     return request<void>('/user/settings', { method: 'PUT', body: JSON.stringify(s) })
+  },
+
+  // 连接测试：后端用已保存配置真实调用一次大模型，返回连通结果
+  async testSettings(): Promise<{ ok: boolean; mode: 'llm' | 'mock'; message: string; reply?: string; latencyMs?: number }> {
+    if (!USE_BACKEND) {
+      return { ok: false, mode: 'mock', message: '演示模式（无后端）：连接测试需在完整版中使用' }
+    }
+    return request('/user/settings/test', { method: 'POST' })
+  },
+
+  // 语音转写：上传录音（8k WAV），后端用内置 paraformer-8k-v2 转写
+  // sharecode 用于后端拼出转写服务可访问的音频外链（站点带访问控制）
+  async speechToText(audio: Blob, sharecode = ''): Promise<{ ok: boolean; text?: string; configured: boolean; message?: string; model?: string; via?: string }> {
+    if (!USE_BACKEND) {
+      return { ok: false, configured: false, message: '演示模式（无后端）：语音转写需在完整版中使用' }
+    }
+    const form = new FormData()
+    const ext = audio.type.includes('wav') ? 'wav' : audio.type.includes('ogg') ? 'ogg' : 'webm'
+    form.append('audio', audio, `answer.${ext}`)
+    if (sharecode) form.append('sharecode', sharecode)
+    const ctrl = new AbortController()
+    const timer = setTimeout(() => ctrl.abort(), 55000)
+    let res: Response
+    try {
+      res = await fetch('/api/asr', { method: 'POST', body: form, signal: ctrl.signal })
+    } catch (e: any) {
+      clearTimeout(timer)
+      return { ok: false, configured: true, message: e?.name === 'AbortError' ? '转写超时（55s）' : '转写请求失败' }
+    }
+    clearTimeout(timer)
+    if (!res.ok) return { ok: false, configured: true, message: `转写请求失败（HTTP ${res.status}）` }
+    return res.json()
   },
 
   // AI 答疑（真实后端返回 { answer }，此处抽取文本）

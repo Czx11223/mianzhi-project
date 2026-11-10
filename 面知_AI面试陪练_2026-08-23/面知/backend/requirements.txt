@@ -5,6 +5,10 @@ uvicorn>=0.30,<1.0
 sqlalchemy>=2.0,<3.0
 pydantic>=2.7,<3.0
 pydantic-settings>=2.2,<3.0
+python-dotenv>=1.0,<2.0
 python-multipart>=0.0.9
 requests>=2.32
 reportlab>=4.2,<5.0
+# 语音识别（ASR）依赖：OpenAI 兼容 SDK + 直连 HTTP 客户端
+openai>=1.30,<2.0
+httpx>=0.27,<1.0

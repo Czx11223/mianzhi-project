@@ -7,8 +7,8 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "行为面试 STAR",
-   "项目经历"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -21,8 +21,8 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
+   "算法题",
    "技术深挖",
-   "行为面试 STAR",
    "项目经历"
   ],
   "answer_mode": "text",
@@ -37,8 +37,8 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "行为面试 STAR",
-   "项目经历"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -52,8 +52,8 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "行为面试 STAR",
-   "项目经历"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -67,7 +67,7 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "行为面试 STAR",
+   "专业基础",
    "项目经历"
   ],
   "answer_mode": "text",
@@ -82,7 +82,7 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "行为面试 STAR",
+   "专业基础",
    "项目经历"
   ],
   "answer_mode": "text",
@@ -96,9 +96,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "技术深挖",
-   "行为面试 STAR",
-   "项目经历"
+   "产品分析",
+   "案例分析",
+   "行为面试 STAR"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -112,8 +112,53 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "行为面试 STAR",
+   "专业基础",
    "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "bytedance-09",
+  "name": "大模型应用开发工程师",
+  "company": "字节跳动",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "技术深挖",
+   "项目经历",
+   "专业基础"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "bytedance-10",
+  "name": "AI Agent工程师",
+  "company": "字节跳动",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "技术深挖",
+   "项目经历",
+   "专业基础"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "bytedance-11",
+  "name": "增长产品经理",
+  "company": "字节跳动",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "产品分析",
+   "案例分析",
+   "行为面试 STAR"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -126,10 +171,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "AI全栈",
    "技术深挖",
-   "产品分析",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -142,10 +186,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "AI全栈",
    "技术深挖",
-   "产品分析",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -158,10 +201,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "AI全栈",
    "技术深挖",
-   "产品分析",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -174,9 +216,8 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "AI全栈",
-   "技术深挖",
    "产品分析",
+   "案例分析",
    "行为面试 STAR"
   ],
   "answer_mode": "text",
@@ -190,10 +231,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "AI全栈",
-   "技术深挖",
    "产品分析",
-   "行为面试 STAR"
+   "技术深挖",
+   "案例分析"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -206,10 +246,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "AI全栈",
    "技术深挖",
-   "产品分析",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -222,9 +261,8 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "AI全栈",
-   "技术深挖",
    "产品分析",
+   "案例分析",
    "行为面试 STAR"
   ],
   "answer_mode": "text",
@@ -238,10 +276,39 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "AI全栈",
+   "案例分析",
    "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "tencent-09",
+  "name": "AI产品经理",
+  "company": "腾讯",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
    "产品分析",
+   "案例分析",
    "行为面试 STAR"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "tencent-10",
+  "name": "大模型应用开发工程师",
+  "company": "腾讯",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "技术深挖",
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -255,8 +322,8 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "电商运营",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -269,9 +336,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
+   "算法题",
    "技术深挖",
-   "电商运营",
-   "行为面试 STAR"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -285,8 +352,8 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "电商运营",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -299,8 +366,8 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "技术深挖",
-   "电商运营",
+   "产品分析",
+   "案例分析",
    "行为面试 STAR"
   ],
   "answer_mode": "text",
@@ -314,9 +381,54 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
+   "案例分析",
+   "专业基础",
+   "情景模拟"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "alibaba-06",
+  "name": "大模型应用开发工程师",
+  "company": "阿里巴巴",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
    "技术深挖",
-   "电商运营",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "alibaba-07",
+  "name": "AI Agent工程师",
+  "company": "阿里巴巴",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "技术深挖",
+   "项目经历",
+   "专业基础"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "alibaba-08",
+  "name": "云原生工程师",
+  "company": "阿里巴巴",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "技术深挖",
+   "专业基础",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -330,8 +442,8 @@
   "duration": 15,
   "question_types": [
    "技术深挖",
-   "行为面试 STAR",
-   "情景模拟"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -344,9 +456,9 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
+   "算法题",
    "技术深挖",
-   "行为面试 STAR",
-   "情景模拟"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -359,9 +471,9 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
-   "技术深挖",
-   "行为面试 STAR",
-   "情景模拟"
+   "产品分析",
+   "案例分析",
+   "行为面试 STAR"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -374,9 +486,39 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
-   "技术深挖",
-   "行为面试 STAR",
+   "案例分析",
+   "专业基础",
    "情景模拟"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "meituan-05",
+  "name": "SRE工程师",
+  "company": "美团",
+  "industry": "互联网",
+  "duration": 15,
+  "question_types": [
+   "技术深挖",
+   "专业基础",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "meituan-06",
+  "name": "数据治理工程师",
+  "company": "美团",
+  "industry": "互联网",
+  "duration": 15,
+  "question_types": [
+   "技术深挖",
+   "专业基础",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -389,9 +531,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "技术深挖",
    "算法题",
-   "行为面试 STAR"
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -405,8 +547,8 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "算法题",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -419,9 +561,39 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
+   "专业基础",
    "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "baidu-04",
+  "name": "多模态算法工程师",
+  "company": "百度",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
    "算法题",
-   "行为面试 STAR"
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "baidu-05",
+  "name": "智能驾驶算法工程师",
+  "company": "百度",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -435,8 +607,8 @@
   "duration": 15,
   "question_types": [
    "技术深挖",
-   "物流运营",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -449,8 +621,8 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
-   "技术深挖",
-   "物流运营",
+   "产品分析",
+   "案例分析",
    "行为面试 STAR"
   ],
   "answer_mode": "text",
@@ -464,9 +636,24 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
+   "专业基础",
+   "案例分析",
+   "情景模拟"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "jd-04",
+  "name": "数据治理工程师",
+  "company": "京东",
+  "industry": "互联网",
+  "duration": 15,
+  "question_types": [
    "技术深挖",
-   "物流运营",
-   "行为面试 STAR"
+   "专业基础",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -479,9 +666,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "游戏策划",
    "产品分析",
-   "行为面试 STAR"
+   "技术深挖",
+   "案例分析"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -494,9 +681,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "游戏策划",
    "产品分析",
-   "行为面试 STAR"
+   "技术深挖",
+   "案例分析"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -509,8 +696,8 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "游戏策划",
    "产品分析",
+   "案例分析",
    "行为面试 STAR"
   ],
   "answer_mode": "text",
@@ -525,7 +712,8 @@
   "duration": 15,
   "question_types": [
    "技术深挖",
-   "电商运营"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -538,8 +726,9 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
-   "技术深挖",
-   "电商运营"
+   "案例分析",
+   "专业基础",
+   "情景模拟"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -553,7 +742,8 @@
   "duration": 15,
   "question_types": [
    "技术深挖",
-   "产品分析"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -566,8 +756,24 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
+   "算法题",
    "技术深挖",
-   "产品分析"
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "kuaishou-03",
+  "name": "多模态算法工程师",
+  "company": "快手",
+  "industry": "互联网",
+  "duration": 15,
+  "question_types": [
+   "算法题",
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -581,8 +787,8 @@
   "duration": 15,
   "question_types": [
    "产品分析",
-   "社区运营",
-   "情景模拟"
+   "案例分析",
+   "行为面试 STAR"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -595,9 +801,39 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
+   "案例分析",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "xiaohongshu-03",
+  "name": "增长产品经理",
+  "company": "小红书",
+  "industry": "互联网",
+  "duration": 15,
+  "question_types": [
    "产品分析",
-   "社区运营",
-   "情景模拟"
+   "案例分析",
+   "行为面试 STAR"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "xiaohongshu-04",
+  "name": "社区运营专员",
+  "company": "小红书",
+  "industry": "互联网",
+  "duration": 15,
+  "question_types": [
+   "案例分析",
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -610,8 +846,9 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
-   "内容运营",
-   "产品分析"
+   "案例分析",
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -624,8 +861,9 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
-   "内容运营",
-   "产品分析"
+   "产品分析",
+   "案例分析",
+   "行为面试 STAR"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -638,7 +876,9 @@
   "industry": "互联网",
   "duration": 15,
   "question_types": [
-   "技术深挖"
+   "技术深挖",
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -652,8 +892,8 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "硬件基础",
-   "行为面试 STAR"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -666,8 +906,8 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "技术深挖",
-   "硬件基础",
+   "产品分析",
+   "案例分析",
    "行为面试 STAR"
   ],
   "answer_mode": "text",
@@ -682,8 +922,8 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "硬件基础",
-   "行为面试 STAR"
+   "专业基础",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -696,8 +936,23 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
+   "专业基础",
    "技术深挖",
-   "硬件基础",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "xiaomi-05",
+  "name": "AI产品经理",
+  "company": "小米",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "产品分析",
+   "案例分析",
    "行为面试 STAR"
   ],
   "answer_mode": "text",
@@ -711,8 +966,8 @@
   "industry": "国企",
   "duration": 25,
   "question_types": [
-   "综合素养",
    "专业基础",
+   "技术深挖",
    "时政认知"
   ],
   "answer_mode": "text",
@@ -726,8 +981,8 @@
   "industry": "国企",
   "duration": 25,
   "question_types": [
-   "综合素养",
    "专业基础",
+   "技术深挖",
    "时政认知"
   ],
   "answer_mode": "text",
@@ -741,9 +996,9 @@
   "industry": "国企",
   "duration": 25,
   "question_types": [
-   "综合素养",
    "专业基础",
-   "时政认知"
+   "案例分析",
+   "情景模拟"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -756,9 +1011,9 @@
   "industry": "国企",
   "duration": 25,
   "question_types": [
-   "综合素养",
    "专业基础",
-   "时政认知"
+   "情景模拟",
+   "案例分析"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -771,8 +1026,8 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
    "专业基础",
+   "技术深挖",
    "时政认知"
   ],
   "answer_mode": "text",
@@ -786,9 +1041,9 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
+   "案例分析",
    "专业基础",
-   "时政认知"
+   "技术深挖"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -801,8 +1056,8 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
    "专业基础",
+   "技术深挖",
    "时政认知"
   ],
   "answer_mode": "text",
@@ -816,9 +1071,9 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
    "专业基础",
-   "情景模拟"
+   "技术深挖",
+   "时政认知"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -831,9 +1086,9 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
    "专业基础",
-   "情景模拟"
+   "技术深挖",
+   "时政认知"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -846,9 +1101,9 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
    "专业基础",
-   "情景模拟"
+   "技术深挖",
+   "时政认知"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -861,9 +1116,9 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
    "专业基础",
-   "情景模拟"
+   "技术深挖",
+   "时政认知"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -877,7 +1132,7 @@
   "duration": 20,
   "question_types": [
    "专业基础",
-   "工程管理",
+   "技术深挖",
    "情景模拟"
   ],
   "answer_mode": "text",
@@ -892,7 +1147,7 @@
   "duration": 20,
   "question_types": [
    "专业基础",
-   "工程管理",
+   "技术深挖",
    "情景模拟"
   ],
   "answer_mode": "text",
@@ -906,8 +1161,9 @@
   "industry": "国企",
   "duration": 15,
   "question_types": [
-   "综合素养",
-   "情景模拟"
+   "专业基础",
+   "情景模拟",
+   "案例分析"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -920,8 +1176,9 @@
   "industry": "国企",
   "duration": 15,
   "question_types": [
-   "综合素养",
-   "情景模拟"
+   "案例分析",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -934,8 +1191,8 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
-   "金融科技",
+   "专业基础",
+   "案例分析",
    "情景模拟"
   ],
   "answer_mode": "text",
@@ -949,8 +1206,8 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
-   "金融科技",
+   "专业基础",
+   "案例分析",
    "情景模拟"
   ],
   "answer_mode": "text",
@@ -964,9 +1221,9 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
-   "金融科技",
-   "情景模拟"
+   "情景模拟",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -979,9 +1236,9 @@
   "industry": "外企",
   "duration": 25,
   "question_types": [
-   "英文面试",
    "技术深挖",
-   "系统设计"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -994,9 +1251,9 @@
   "industry": "外企",
   "duration": 25,
   "question_types": [
-   "英文面试",
    "技术深挖",
-   "系统设计"
+   "专业基础",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -1009,9 +1266,9 @@
   "industry": "外企",
   "duration": 25,
   "question_types": [
-   "英文面试",
    "技术深挖",
-   "硬件基础"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -1024,9 +1281,9 @@
   "industry": "外企",
   "duration": 20,
   "question_types": [
-   "英文面试",
    "专业基础",
-   "供应链"
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -1039,9 +1296,9 @@
   "industry": "外企",
   "duration": 20,
   "question_types": [
-   "行为面试 STAR",
-   "英文面试",
-   "供应链"
+   "专业基础",
+   "案例分析",
+   "情景模拟"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -1054,9 +1311,9 @@
   "industry": "外企",
   "duration": 20,
   "question_types": [
-   "行为面试 STAR",
-   "英文面试",
-   "供应链"
+   "案例分析",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -1069,8 +1326,9 @@
   "industry": "外企",
   "duration": 20,
   "question_types": [
-   "行为面试 STAR",
-   "市场分析"
+   "案例分析",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -1083,8 +1341,9 @@
   "industry": "外企",
   "duration": 20,
   "question_types": [
-   "行为面试 STAR",
-   "市场分析"
+   "情景模拟",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -1097,8 +1356,9 @@
   "industry": "外企",
   "duration": 20,
   "question_types": [
-   "市场分析",
-   "行为面试 STAR"
+   "案例分析",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -1111,9 +1371,9 @@
   "industry": "外企",
   "duration": 25,
   "question_types": [
+   "专业基础",
    "案例分析",
-   "英文面试",
-   "专业基础"
+   "情景模拟"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1126,9 +1386,9 @@
   "industry": "外企",
   "duration": 25,
   "question_types": [
+   "专业基础",
    "案例分析",
-   "英文面试",
-   "专业基础"
+   "英文面试"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1141,9 +1401,24 @@
   "industry": "外企",
   "duration": 25,
   "question_types": [
+   "专业基础",
    "案例分析",
-   "英文面试",
-   "专业基础"
+   "情景模拟"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "big4-04",
+  "name": "ESG分析师",
+  "company": "四大会计师事务所",
+  "industry": "外企",
+  "duration": 25,
+  "question_types": [
+   "专业基础",
+   "案例分析",
+   "英文面试"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1157,7 +1432,8 @@
   "duration": 20,
   "question_types": [
    "技术深挖",
-   "金融风控"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -1170,8 +1446,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
+   "算法题",
    "技术深挖",
-   "金融风控"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -1184,8 +1461,9 @@
   "industry": "互联网",
   "duration": 20,
   "question_types": [
-   "技术深挖",
-   "金融风控"
+   "专业基础",
+   "案例分析",
+   "情景模拟"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -1198,8 +1476,8 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
-   "金融科技",
+   "专业基础",
+   "案例分析",
    "情景模拟"
   ],
   "answer_mode": "text",
@@ -1213,9 +1491,9 @@
   "industry": "国企",
   "duration": 20,
   "question_types": [
-   "综合素养",
-   "金融科技",
-   "情景模拟"
+   "情景模拟",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1243,10 +1521,9 @@
   "industry": "制造业",
   "duration": 25,
   "question_types": [
-   "AI全栈",
    "技术深挖",
-   "综合素养",
-   "压力测试"
+   "项目经历",
+   "专业基础"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1259,10 +1536,9 @@
   "industry": "制造业",
   "duration": 25,
   "question_types": [
-   "AI全栈",
+   "专业基础",
    "技术深挖",
-   "综合素养",
-   "压力测试"
+   "时政认知"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1275,10 +1551,9 @@
   "industry": "制造业",
   "duration": 25,
   "question_types": [
-   "AI全栈",
+   "专业基础",
    "技术深挖",
-   "综合素养",
-   "压力测试"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1291,10 +1566,9 @@
   "industry": "制造业",
   "duration": 25,
   "question_types": [
-   "AI全栈",
+   "专业基础",
    "技术深挖",
-   "综合素养",
-   "压力测试"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1307,10 +1581,39 @@
   "industry": "制造业",
   "duration": 25,
   "question_types": [
-   "AI全栈",
+   "情景模拟",
+   "专业基础",
+   "技术深挖"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "huawei-06",
+  "name": "大模型应用开发工程师",
+  "company": "华为",
+  "industry": "制造业",
+  "duration": 25,
+  "question_types": [
    "技术深挖",
-   "综合素养",
-   "压力测试"
+   "项目经历",
+   "专业基础"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "huawei-07",
+  "name": "芯片验证工程师",
+  "company": "华为",
+  "industry": "制造业",
+  "duration": 25,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1323,8 +1626,9 @@
   "industry": "制造业",
   "duration": 20,
   "question_types": [
+   "专业基础",
    "技术深挖",
-   "专业基础"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1337,8 +1641,9 @@
   "industry": "制造业",
   "duration": 20,
   "question_types": [
+   "算法题",
    "技术深挖",
-   "专业基础"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1351,9 +1656,9 @@
   "industry": "制造业",
   "duration": 20,
   "question_types": [
-   "技术深挖",
    "专业基础",
-   "市场分析"
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1366,9 +1671,9 @@
   "industry": "制造业",
   "duration": 20,
   "question_types": [
-   "技术深挖",
    "专业基础",
-   "市场分析"
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1381,8 +1686,9 @@
   "industry": "制造业",
   "duration": 20,
   "question_types": [
+   "专业基础",
    "技术深挖",
-   "专业基础"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1395,8 +1701,24 @@
   "industry": "制造业",
   "duration": 20,
   "question_types": [
+   "专业基础",
    "技术深挖",
-   "专业基础"
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "catl-03",
+  "name": "储能系统工程师",
+  "company": "宁德时代",
+  "industry": "制造业",
+  "duration": 20,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "时政认知"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1409,8 +1731,9 @@
   "industry": "制造业",
   "duration": 20,
   "question_types": [
+   "算法题",
    "技术深挖",
-   "算法基础"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1423,8 +1746,9 @@
   "industry": "制造业",
   "duration": 20,
   "question_types": [
+   "专业基础",
    "技术深挖",
-   "算法基础"
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "pressure",
@@ -1437,8 +1761,9 @@
   "industry": "快消",
   "duration": 15,
   "question_types": [
-   "市场分析",
-   "情景模拟"
+   "案例分析",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -1451,8 +1776,9 @@
   "industry": "快消",
   "duration": 15,
   "question_types": [
-   "市场分析",
-   "情景模拟"
+   "情景模拟",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -1465,8 +1791,9 @@
   "industry": "快消",
   "duration": 15,
   "question_types": [
-   "行为面试 STAR",
-   "供应链"
+   "情景模拟",
+   "专业基础",
+   "技术深挖"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -1479,8 +1806,9 @@
   "industry": "快消",
   "duration": 15,
   "question_types": [
-   "行为面试 STAR",
-   "供应链"
+   "专业基础",
+   "案例分析",
+   "情景模拟"
   ],
   "answer_mode": "voice",
   "mode": "normal",
@@ -1494,7 +1822,8 @@
   "duration": 20,
   "question_types": [
    "专业基础",
-   "行为面试 STAR"
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -1508,7 +1837,8 @@
   "duration": 20,
   "question_types": [
    "专业基础",
-   "行为面试 STAR"
+   "技术深挖",
+   "项目经历"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -1521,8 +1851,9 @@
   "industry": "文职",
   "duration": 15,
   "question_types": [
+   "专业基础",
    "情景模拟",
-   "行为面试 STAR"
+   "案例分析"
   ],
   "answer_mode": "text",
   "mode": "normal",
@@ -1535,11 +1866,312 @@
   "industry": "文职",
   "duration": 15,
   "question_types": [
+   "专业基础",
    "情景模拟",
-   "行为面试 STAR"
+   "案例分析"
   ],
   "answer_mode": "text",
   "mode": "normal",
   "total_questions": 8
+ },
+ {
+  "id": "zhipu-01",
+  "name": "大模型应用开发工程师",
+  "company": "智谱AI",
+  "industry": "互联网",
+  "duration": 25,
+  "question_types": [
+   "技术深挖",
+   "项目经历",
+   "专业基础"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 10
+ },
+ {
+  "id": "zhipu-02",
+  "name": "算法工程师",
+  "company": "智谱AI",
+  "industry": "互联网",
+  "duration": 25,
+  "question_types": [
+   "算法题",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 10
+ },
+ {
+  "id": "zhipu-03",
+  "name": "AI产品经理",
+  "company": "智谱AI",
+  "industry": "互联网",
+  "duration": 25,
+  "question_types": [
+   "产品分析",
+   "案例分析",
+   "行为面试 STAR"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 10
+ },
+ {
+  "id": "moonshot-01",
+  "name": "大模型应用开发工程师",
+  "company": "月之暗面",
+  "industry": "互联网",
+  "duration": 25,
+  "question_types": [
+   "技术深挖",
+   "项目经历",
+   "专业基础"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 10
+ },
+ {
+  "id": "moonshot-02",
+  "name": "AI Agent工程师",
+  "company": "月之暗面",
+  "industry": "互联网",
+  "duration": 25,
+  "question_types": [
+   "技术深挖",
+   "项目经历",
+   "专业基础"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 10
+ },
+ {
+  "id": "unitree-01",
+  "name": "具身智能算法工程师",
+  "company": "宇树科技",
+  "industry": "制造业",
+  "duration": 25,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "unitree-02",
+  "name": "嵌入式软件工程师",
+  "company": "宇树科技",
+  "industry": "制造业",
+  "duration": 25,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "lixiang-01",
+  "name": "智能驾驶算法工程师",
+  "company": "理想汽车",
+  "industry": "制造业",
+  "duration": 20,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "lixiang-02",
+  "name": "整车研发工程师",
+  "company": "理想汽车",
+  "industry": "制造业",
+  "duration": 20,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "lixiang-03",
+  "name": "AI产品经理",
+  "company": "理想汽车",
+  "industry": "制造业",
+  "duration": 20,
+  "question_types": [
+   "产品分析",
+   "案例分析",
+   "行为面试 STAR"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "smic-01",
+  "name": "芯片验证工程师",
+  "company": "中芯国际",
+  "industry": "制造业",
+  "duration": 20,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "smic-02",
+  "name": "数字IC设计工程师",
+  "company": "中芯国际",
+  "industry": "制造业",
+  "duration": 20,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "smic-03",
+  "name": "工艺工程师",
+  "company": "中芯国际",
+  "industry": "制造业",
+  "duration": 20,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "longi-01",
+  "name": "光伏工艺工程师",
+  "company": "隆基绿能",
+  "industry": "制造业",
+  "duration": 20,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "时政认知"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 10
+ },
+ {
+  "id": "longi-02",
+  "name": "材料研发工程师",
+  "company": "隆基绿能",
+  "industry": "制造业",
+  "duration": 20,
+  "question_types": [
+   "专业基础",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 10
+ },
+ {
+  "id": "shein-01",
+  "name": "跨境电商运营",
+  "company": "SHEIN",
+  "industry": "互联网",
+  "duration": 15,
+  "question_types": [
+   "案例分析",
+   "专业基础",
+   "情景模拟"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "shein-02",
+  "name": "供应链管培生",
+  "company": "SHEIN",
+  "industry": "互联网",
+  "duration": 15,
+  "question_types": [
+   "专业基础",
+   "案例分析",
+   "情景模拟"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "shein-03",
+  "name": "数据分析师",
+  "company": "SHEIN",
+  "industry": "互联网",
+  "duration": 15,
+  "question_types": [
+   "技术深挖",
+   "专业基础",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "normal",
+  "total_questions": 8
+ },
+ {
+  "id": "qianxin-01",
+  "name": "信息安全工程师",
+  "company": "奇安信",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "技术深挖",
+   "专业基础",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
+ },
+ {
+  "id": "qianxin-02",
+  "name": "算法工程师",
+  "company": "奇安信",
+  "industry": "互联网",
+  "duration": 20,
+  "question_types": [
+   "算法题",
+   "技术深挖",
+   "项目经历"
+  ],
+  "answer_mode": "text",
+  "mode": "pressure",
+  "total_questions": 10
  }
 ]

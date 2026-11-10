@@ -7,3 +7,31 @@ Thumbs.db
 # 本地环境配置
 .env
 .env.*
+
+# 密钥 / 运行时配置（含 API Key，禁止入库）
+runtime_settings.json
+*.local.json
+
+# 前端依赖与构建产物
+node_modules/
+dist/
+webapp/
+.edgeone/
+*.tsbuildinfo
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 数据库 / 日志 / 本地数据
+data/
+*.db
+*.db-journal
+*.sqlite3
+*.log
+
+# 本地备份
+_backup_*/

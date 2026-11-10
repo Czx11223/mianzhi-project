@@ -74,7 +74,7 @@ export const seedJobs: JobConfig[] = [
     company: "字节跳动",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["技术深挖", "行为面试 STAR", "项目经历"],
+    questionTypes: ["产品分析", "行为面试 STAR", "项目经历"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -140,7 +140,7 @@ export const seedJobs: JobConfig[] = [
     company: "腾讯",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["AI全栈", "技术深挖", "产品分析", "行为面试 STAR"],
+    questionTypes: ["游戏策划", "产品分析", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -173,7 +173,7 @@ export const seedJobs: JobConfig[] = [
     company: "腾讯",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["AI全栈", "技术深挖", "产品分析", "行为面试 STAR"],
+    questionTypes: ["内容运营", "产品分析", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -184,7 +184,7 @@ export const seedJobs: JobConfig[] = [
     company: "阿里巴巴",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["技术深挖", "电商运营", "行为面试 STAR"],
+    questionTypes: ["技术深挖", "行为面试 STAR", "系统设计"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -195,7 +195,7 @@ export const seedJobs: JobConfig[] = [
     company: "阿里巴巴",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["技术深挖", "电商运营", "行为面试 STAR"],
+    questionTypes: ["技术深挖", "算法基础", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -206,7 +206,7 @@ export const seedJobs: JobConfig[] = [
     company: "阿里巴巴",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["技术深挖", "电商运营", "行为面试 STAR"],
+    questionTypes: ["技术深挖", "行为面试 STAR", "系统设计"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -217,7 +217,7 @@ export const seedJobs: JobConfig[] = [
     company: "阿里巴巴",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["技术深挖", "电商运营", "行为面试 STAR"],
+    questionTypes: ["产品分析", "电商运营", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -228,7 +228,7 @@ export const seedJobs: JobConfig[] = [
     company: "阿里巴巴",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["技术深挖", "电商运营", "行为面试 STAR"],
+    questionTypes: ["电商运营", "产品分析", "情景模拟"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -261,7 +261,7 @@ export const seedJobs: JobConfig[] = [
     company: "美团",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖", "行为面试 STAR", "情景模拟"],
+    questionTypes: ["产品分析", "情景模拟", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -272,7 +272,7 @@ export const seedJobs: JobConfig[] = [
     company: "美团",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖", "行为面试 STAR", "情景模拟"],
+    questionTypes: ["情景模拟", "物流运营", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -316,7 +316,7 @@ export const seedJobs: JobConfig[] = [
     company: "京东",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖", "物流运营", "行为面试 STAR"],
+    questionTypes: ["技术深挖", "行为面试 STAR", "系统设计"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -327,7 +327,7 @@ export const seedJobs: JobConfig[] = [
     company: "京东",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖", "物流运营", "行为面试 STAR"],
+    questionTypes: ["产品分析", "物流运营", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -338,7 +338,7 @@ export const seedJobs: JobConfig[] = [
     company: "京东",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖", "物流运营", "行为面试 STAR"],
+    questionTypes: ["物流运营", "情景模拟", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -360,7 +360,7 @@ export const seedJobs: JobConfig[] = [
     company: "网易",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["游戏策划", "产品分析", "行为面试 STAR"],
+    questionTypes: ["技术深挖", "游戏策划", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -382,7 +382,7 @@ export const seedJobs: JobConfig[] = [
     company: "拼多多",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖", "电商运营"],
+    questionTypes: ["技术深挖", "行为面试 STAR", "系统设计"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -393,7 +393,7 @@ export const seedJobs: JobConfig[] = [
     company: "拼多多",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖", "电商运营"],
+    questionTypes: ["电商运营", "产品分析", "情景模拟"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -404,7 +404,7 @@ export const seedJobs: JobConfig[] = [
     company: "快手",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖", "产品分析"],
+    questionTypes: ["技术深挖", "行为面试 STAR", "系统设计"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -415,7 +415,7 @@ export const seedJobs: JobConfig[] = [
     company: "快手",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖", "产品分析"],
+    questionTypes: ["技术深挖", "算法基础", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -426,7 +426,7 @@ export const seedJobs: JobConfig[] = [
     company: "小红书",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["产品分析", "社区运营", "情景模拟"],
+    questionTypes: ["产品分析", "社区运营", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -459,7 +459,7 @@ export const seedJobs: JobConfig[] = [
     company: "哔哩哔哩",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["内容运营", "产品分析"],
+    questionTypes: ["产品分析", "内容运营", "行为面试 STAR"],
     answerMode: "voice",
     mode: "normal",
     totalQuestions: 8
@@ -470,7 +470,7 @@ export const seedJobs: JobConfig[] = [
     company: "滴滴出行",
     industry: "互联网",
     duration: 15,
-    questionTypes: ["技术深挖"],
+    questionTypes: ["技术深挖", "行为面试 STAR", "系统设计"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -492,7 +492,7 @@ export const seedJobs: JobConfig[] = [
     company: "小米",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["技术深挖", "硬件基础", "行为面试 STAR"],
+    questionTypes: ["产品分析", "技术深挖", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -503,7 +503,7 @@ export const seedJobs: JobConfig[] = [
     company: "小米",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["技术深挖", "硬件基础", "行为面试 STAR"],
+    questionTypes: ["硬件基础", "专业基础", "行为面试 STAR"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -536,7 +536,7 @@ export const seedJobs: JobConfig[] = [
     company: "国家电网",
     industry: "国企",
     duration: 25,
-    questionTypes: ["综合素养", "专业基础", "时政认知"],
+    questionTypes: ["技术深挖", "专业基础", "综合素养"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -547,7 +547,7 @@ export const seedJobs: JobConfig[] = [
     company: "国家电网",
     industry: "国企",
     duration: 25,
-    questionTypes: ["综合素养", "专业基础", "时政认知"],
+    questionTypes: ["专业基础", "综合素养", "案例分析"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -580,7 +580,7 @@ export const seedJobs: JobConfig[] = [
     company: "中国移动",
     industry: "国企",
     duration: 20,
-    questionTypes: ["综合素养", "专业基础", "时政认知"],
+    questionTypes: ["市场分析", "综合素养", "情景模拟"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -591,7 +591,7 @@ export const seedJobs: JobConfig[] = [
     company: "中国移动",
     industry: "国企",
     duration: 20,
-    questionTypes: ["综合素养", "专业基础", "时政认知"],
+    questionTypes: ["技术深挖", "综合素养", "专业基础"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -679,7 +679,7 @@ export const seedJobs: JobConfig[] = [
     company: "中国烟草",
     industry: "国企",
     duration: 15,
-    questionTypes: ["综合素养", "情景模拟"],
+    questionTypes: ["市场分析", "情景模拟", "综合素养"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -712,7 +712,7 @@ export const seedJobs: JobConfig[] = [
     company: "工商银行",
     industry: "国企",
     duration: 20,
-    questionTypes: ["综合素养", "金融科技", "情景模拟"],
+    questionTypes: ["情景模拟", "金融科技", "综合素养"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -745,7 +745,7 @@ export const seedJobs: JobConfig[] = [
     company: "苹果中国",
     industry: "外企",
     duration: 25,
-    questionTypes: ["英文面试", "技术深挖", "硬件基础"],
+    questionTypes: ["英文面试", "技术深挖", "系统设计"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -877,7 +877,7 @@ export const seedJobs: JobConfig[] = [
     company: "蚂蚁集团",
     industry: "互联网",
     duration: 20,
-    questionTypes: ["技术深挖", "金融风控"],
+    questionTypes: ["金融风控", "技术深挖", "案例分析"],
     answerMode: "text",
     mode: "normal",
     totalQuestions: 8
@@ -899,7 +899,7 @@ export const seedJobs: JobConfig[] = [
     company: "招商银行",
     industry: "国企",
     duration: 20,
-    questionTypes: ["综合素养", "金融科技", "情景模拟"],
+    questionTypes: ["情景模拟", "综合素养", "金融科技"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -954,7 +954,7 @@ export const seedJobs: JobConfig[] = [
     company: "华为",
     industry: "制造业",
     duration: 25,
-    questionTypes: ["AI全栈", "技术深挖", "综合素养", "压力测试"],
+    questionTypes: ["硬件基础", "技术深挖", "专业基础"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -965,7 +965,7 @@ export const seedJobs: JobConfig[] = [
     company: "华为",
     industry: "制造业",
     duration: 25,
-    questionTypes: ["AI全栈", "技术深挖", "综合素养", "压力测试"],
+    questionTypes: ["情景模拟", "综合素养", "压力测试"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -987,7 +987,7 @@ export const seedJobs: JobConfig[] = [
     company: "大疆",
     industry: "制造业",
     duration: 20,
-    questionTypes: ["技术深挖", "专业基础"],
+    questionTypes: ["技术深挖", "算法基础", "算法题"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -998,7 +998,7 @@ export const seedJobs: JobConfig[] = [
     company: "比亚迪",
     industry: "制造业",
     duration: 20,
-    questionTypes: ["技术深挖", "专业基础", "市场分析"],
+    questionTypes: ["技术深挖", "专业基础"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -1009,7 +1009,7 @@ export const seedJobs: JobConfig[] = [
     company: "比亚迪",
     industry: "制造业",
     duration: 20,
-    questionTypes: ["技术深挖", "专业基础", "市场分析"],
+    questionTypes: ["技术深挖", "专业基础"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -1053,7 +1053,7 @@ export const seedJobs: JobConfig[] = [
     company: "海康威视",
     industry: "制造业",
     duration: 20,
-    questionTypes: ["技术深挖", "算法基础"],
+    questionTypes: ["技术深挖", "硬件基础", "专业基础"],
     answerMode: "text",
     mode: "pressure",
     totalQuestions: 10
@@ -1928,5 +1928,465 @@ export const seedQuestions: QuestionItem[] = [
     company: "通用行政",
     referenceAnswer: "需求调研 → 课程模块(文化/技能/导师制) → 考核与反馈 → 90天留存跟踪。",
     template: "调研 → 模块 → 考核 → 跟踪"
+  },
+  {
+    id: "q79",
+    title: "（字节跳动）讲一个你主导的项目：目标、你的角色、关键决策与最终结果。",
+    type: "项目经历",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "字节跳动",
+    referenceAnswer: "背景与目标(可量化) → 我的角色与边界 → 两三个关键决策及取舍理由 → 结果数据与复盘沉淀。",
+    template: "背景 → 角色 → 决策取舍 → 结果复盘"
+  },
+  {
+    id: "q80",
+    title: "（字节跳动）项目上线后未达预期指标，你如何定位原因并推动改进？",
+    type: "项目经历",
+    difficulty: "困难",
+    industry: "互联网",
+    company: "字节跳动",
+    referenceAnswer: "先确认指标口径与埋点 → 拆解漏斗定位流失环节 → 区分技术/产品/运营归因 → 制定实验方案 → 灰度验证与复盘。",
+    template: "口径 → 拆解 → 归因 → 实验 → 复盘"
+  },
+  {
+    id: "q81",
+    title: "（字节跳动）项目中你做过的最有技术含量的取舍是什么？为什么这么选？",
+    type: "项目经历",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "字节跳动",
+    referenceAnswer: "明确约束(时间/人力/性能/成本) → 列候选方案 → 对比量化指标 → 说明最终取舍与遗留风险。",
+    template: "约束 → 备选 → 指标对比 → 取舍与风险"
+  },
+  {
+    id: "q82",
+    title: "（字节跳动）介绍一个你从 0 到 1 交付的项目，说明里程碑与风险控制。",
+    type: "项目经历",
+    difficulty: "简单",
+    industry: "互联网",
+    company: "字节跳动",
+    referenceAnswer: "目标与范围界定 → 里程碑拆分(可演示的最小闭环优先) → 关键风险与预案 → 联调验收 → 上线与观测。",
+    template: "范围 → 里程碑 → 风险预案 → 验收"
+  },
+  {
+    id: "q83",
+    title: "（阿里巴巴）如何提升店铺的转化率？请给出可执行的优化路径。",
+    type: "电商运营",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "阿里巴巴",
+    referenceAnswer: "拆曝光→点击→加购→支付漏斗 → 定位最大流失环节 → 优化主图/详情/评价/价格锚点 → A/B 验证 → 固化 SOP。",
+    template: "漏斗拆解 → 定位 → 页面优化 → A/B"
+  },
+  {
+    id: "q84",
+    title: "（拼多多）大促期间如何设计货品与价格策略？",
+    type: "电商运营",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "拼多多",
+    referenceAnswer: "引流款/利润款/形象款分层 → 价格带卡位与竞品对标 → 库存与产能预锁 → 节奏(预热/爆发/返场) → 复盘。",
+    template: "货品分层 → 价格卡位 → 备货 → 节奏"
+  },
+  {
+    id: "q85",
+    title: "（阿里巴巴）如何诊断一个 GMV 下滑的店铺？",
+    type: "电商运营",
+    difficulty: "困难",
+    industry: "互联网",
+    company: "阿里巴巴",
+    referenceAnswer: "GMV=流量×转化×客单 三段拆解 → 对比环比/竞品/行业大盘 → 排查流量结构、活动节奏、评价与售后 → 给出优先级动作。",
+    template: "三段拆解 → 横向对比 → 逐项排查 → 动作排序"
+  },
+  {
+    id: "q86",
+    title: "（联合利华）如何评估一个新市场的进入机会？",
+    type: "市场分析",
+    difficulty: "中等",
+    industry: "外企",
+    company: "联合利华",
+    referenceAnswer: "市场规模与增速(TAM/SAM/SOM) → 竞争格局与替代品 → 目标人群与需求验证 → 渠道与进入成本 → 进入方式(自建/并购/代理)。",
+    template: "规模 → 竞争 → 人群 → 渠道 → 方式"
+  },
+  {
+    id: "q87",
+    title: "（伊利）如何用数据判断一款新品的市场潜力？",
+    type: "市场分析",
+    difficulty: "中等",
+    industry: "快消",
+    company: "伊利集团",
+    referenceAnswer: "品类增速与价格带空缺 → 试销数据(动销率/复购/铺货率) → 搜索与社媒声量 → 竞品价格弹性 → 放量决策门槛。",
+    template: "品类 → 试销 → 声量 → 弹性 → 门槛"
+  },
+  {
+    id: "q88",
+    title: "（比亚迪）如何分析新能源汽车细分市场的竞争格局？",
+    type: "市场分析",
+    difficulty: "困难",
+    industry: "制造业",
+    company: "比亚迪",
+    referenceAnswer: "按价格带与车型细分 → 份额与增速矩阵(明星/现金牛) → 技术与供应链壁垒 → 政策与补贴趋势 → 自身定位结论。",
+    template: "细分 → 份额矩阵 → 壁垒 → 政策 → 定位"
+  },
+  {
+    id: "q89",
+    title: "（欧莱雅）如何做竞品对标与定价区间分析？",
+    type: "市场分析",
+    difficulty: "中等",
+    industry: "外企",
+    company: "欧莱雅中国",
+    referenceAnswer: "选对标集(直接/间接/替代) → 拆产品力(成分/功效/包装) → 价格带分布与价格锚点 → 消费者感知价值调研 → 定价建议与弹性验证。",
+    template: "对标集 → 产品力 → 价格带 → 感知价值 → 定价"
+  },
+  {
+    id: "q90",
+    title: "（小米）简述手机主板常见硬件模块与信号完整性要点。",
+    type: "硬件基础",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "小米",
+    referenceAnswer: "SoC/PMIC/射频/存储/摄像头等模块 → 电源完整性与纹波 → 高速信号阻抗匹配与串扰 → EMC 与热设计约束。",
+    template: "模块 → 电源 → 高速信号 → EMC/热"
+  },
+  {
+    id: "q91",
+    title: "（小米）硬件产品做可靠性测试时，你会设计哪些测试项目？",
+    type: "硬件基础",
+    difficulty: "困难",
+    industry: "互联网",
+    company: "小米",
+    referenceAnswer: "环境(高低温/湿热/盐雾) → 机械(跌落/振动/插拔) → 电气(ESD/浪涌/老化) → 寿命与 MTBF → 失效判定标准与抽样方案。",
+    template: "环境 → 机械 → 电气 → 寿命 → 判定"
+  },
+  {
+    id: "q92",
+    title: "（苹果）如何定位一个偶发的硬件失效问题？",
+    type: "硬件基础",
+    difficulty: "中等",
+    industry: "外企",
+    company: "苹果中国",
+    referenceAnswer: "复现条件收敛(温度/电压/时序) → 失效样本切片与 X-Ray/显微分析 → 对比良品做差异定位 → 根因验证(改设计/改工艺) → 批次风险评估。",
+    template: "复现 → 失效分析 → 差异对比 → 根因 → 风险评估"
+  },
+  {
+    id: "q93",
+    title: "（工商银行）银行核心系统做分布式改造，难点在哪里？",
+    type: "金融科技",
+    difficulty: "中等",
+    industry: "国企",
+    company: "工商银行",
+    referenceAnswer: "强一致账务与分布式事务 → 数据分片与热点账户 → 幂等与对账补偿 → 灰度迁移与双跑 → 监管合规与审计留痕。",
+    template: "一致性 → 分片 → 幂等对账 → 灰度 → 合规"
+  },
+  {
+    id: "q94",
+    title: "（招商银行）如何设计一个高可用的支付清算链路？",
+    type: "金融科技",
+    difficulty: "困难",
+    industry: "国企",
+    company: "招商银行",
+    referenceAnswer: "多活架构与单元化 → 幂等键与状态机 → 异步对账与差错处理 → 限流熔断与降级 → 全链路压测与演练。",
+    template: "多活 → 幂等状态机 → 对账 → 限流降级 → 演练"
+  },
+  {
+    id: "q95",
+    title: "（工商银行）谈谈你对金融数据安全与隐私保护的落地做法。",
+    type: "金融科技",
+    difficulty: "中等",
+    industry: "国企",
+    company: "工商银行",
+    referenceAnswer: "分类分级与最小权限 → 传输与存储加密、脱敏与去标识化 → 访问审计与堡垒机 → 数据出境与合规评估 → 应急与追责机制。",
+    template: "分级 → 加密脱敏 → 审计 → 合规 → 应急"
+  },
+  {
+    id: "q96",
+    title: "（宝洁）如何设计一个端到端的供应链计划体系（S&OP）？",
+    type: "供应链",
+    difficulty: "中等",
+    industry: "外企",
+    company: "宝洁",
+    referenceAnswer: "需求预测(统计+共识) → 供应能力与产能规划 → 库存策略(安全库存/补货点) → 产销协同会议机制 → 指标(达成率/周转/缺货)。",
+    template: "预测 → 产能 → 库存 → 协同 → 指标"
+  },
+  {
+    id: "q97",
+    title: "（玛氏）如何应对旺季产能与库存的错配？",
+    type: "供应链",
+    difficulty: "中等",
+    industry: "快消",
+    company: "玛氏中国",
+    referenceAnswer: "旺季需求预测与提前备货 → 产线排产与柔性产能 → 分仓铺货与调拨规则 → 缺货优先级(高毛利/战略客户) → 复盘修正参数。",
+    template: "预测 → 产线 → 分仓 → 优先级 → 复盘"
+  },
+  {
+    id: "q98",
+    title: "（特斯拉）如何缩短零部件从下单到上线的周期？",
+    type: "供应链",
+    difficulty: "困难",
+    industry: "外企",
+    company: "特斯拉中国",
+    referenceAnswer: "拆解全链路周期(下单/生产/运输/入厂检验) → 找最长环节 → 供应商就近化与 VMI → 运输与关务优化 → 库存与齐套率平衡。",
+    template: "拆周期 → 找瓶颈 → 就近化 → 物流 → 齐套"
+  },
+  {
+    id: "q99",
+    title: "（玛氏）供应商交付不稳定，你如何建立预警与替代机制？",
+    type: "供应链",
+    difficulty: "中等",
+    industry: "快消",
+    company: "玛氏中国",
+    referenceAnswer: "交付绩效看板与红黄绿分级 → 提前期与在途监控预警 → 双源/备选供应商认证 → 安全库存与合同约束 → 季度评审与淘汰。",
+    template: "看板 → 预警 → 双源 → 库存合同 → 评审"
+  },
+  {
+    id: "q100",
+    title: "（百度）手写实现 LRU 缓存，并说明时间复杂度。",
+    type: "算法题",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "百度",
+    referenceAnswer: "哈希表 + 双向链表；get/put 均为 O(1)；注意容量边界、节点移动与淘汰尾部；可提并发场景下的分段锁优化。",
+    template: "结构选择 → 核心操作 → 复杂度 → 边界"
+  },
+  {
+    id: "q101",
+    title: "（百度）给定海量日志，如何找出出现频率最高的 Top K？",
+    type: "算法题",
+    difficulty: "困难",
+    industry: "互联网",
+    company: "百度",
+    referenceAnswer: "哈希分桶拆分成小文件 → 各桶内哈希计数 → 每桶取 Top K(小顶堆) → 归并求全局 Top K；说明内存与 IO 权衡。",
+    template: "分桶 → 计数 → 堆 → 归并"
+  },
+  {
+    id: "q102",
+    title: "（百度）如何判断链表是否有环？给出证明与扩展。",
+    type: "算法题",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "百度",
+    referenceAnswer: "快慢指针相遇即有环，O(n)/O(1)；证明给出相遇时距离关系；扩展求环入口(相遇后一指针回头同速走)。",
+    template: "快慢指针 → 证明 → 入口扩展"
+  },
+  {
+    id: "q103",
+    title: "（京东）如何设计仓配一体的履约时效方案？",
+    type: "物流运营",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "京东",
+    referenceAnswer: "按订单密度分仓与前置仓布局 → 库存下沉与品类匹配 → 波次拣选与分拣时效 → 末端配送路径 → 时效达成率与成本双指标。",
+    template: "布仓 → 库存下沉 → 仓内时效 → 末端 → 双指标"
+  },
+  {
+    id: "q104",
+    title: "（京东）大促期间如何做运力与仓容的弹性规划？",
+    type: "物流运营",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "京东",
+    referenceAnswer: "历史单量预测与峰值系数 → 仓容与人力缺口测算 → 临时仓/外包运力储备 → 分时段限流与预约 → 实时监控与预案触发。",
+    template: "预测 → 缺口测算 → 储备 → 限流 → 预案"
+  },
+  {
+    id: "q105",
+    title: "（京东）如何降低末端配送的履约成本？",
+    type: "物流运营",
+    difficulty: "困难",
+    industry: "互联网",
+    company: "京东",
+    referenceAnswer: "单均成本拆解(人力/里程/失败重投) → 智能路径与集单 → 自提柜/驿站分流 → 时效分层定价 → 考核与激励机制。",
+    template: "拆成本 → 路径集单 → 分流 → 分层定价 → 激励"
+  },
+  {
+    id: "q106",
+    title: "（蚂蚁集团）如何设计一套实时交易反欺诈规则与模型体系？",
+    type: "金融风控",
+    difficulty: "困难",
+    industry: "互联网",
+    company: "蚂蚁集团",
+    referenceAnswer: "设备/行为/关系特征 → 规则(强约束)+模型(评分)双通道 → 决策引擎与策略分层 → 处置动作(拦截/验证/放行) → 误杀监控与对抗迭代。",
+    template: "特征 → 规则+模型 → 决策引擎 → 处置 → 迭代"
+  },
+  {
+    id: "q107",
+    title: "（蚂蚁集团）风控模型误杀率高，你如何优化？",
+    type: "金融风控",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "蚂蚁集团",
+    referenceAnswer: "核对误杀定义与样本标注 → 分析误杀集中的特征与阈值 → 调整阈值/引入白名单与人工复核 → 挑战者模型 A/B → 灰度放量与监控。",
+    template: "口径 → 归因 → 阈值白名单 → A/B → 灰度"
+  },
+  {
+    id: "q108",
+    title: "（蚂蚁集团）如何做贷前、贷中、贷后的全流程风险监控？",
+    type: "金融风控",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "蚂蚁集团",
+    referenceAnswer: "贷前准入评分与反欺诈 → 贷中行为监控(额度/交易/多头) → 贷后催收与预警分层 → 风险指标(逾期率/迁徙率) → 策略闭环回写。",
+    template: "贷前准入 → 贷中监控 → 贷后预警 → 指标 → 闭环"
+  },
+  {
+    id: "q109",
+    title: "（小红书）如何提升社区创作者的持续产出意愿？",
+    type: "社区运营",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "小红书",
+    referenceAnswer: "创作者分层(头部/腰部/新手) → 冷启动流量扶持与选题引导 → 成长激励(等级/权益/变现) → 反馈与陪伴机制 → 留存与产出率指标。",
+    template: "分层 → 扶持 → 激励 → 陪伴 → 指标"
+  },
+  {
+    id: "q110",
+    title: "（小红书）社区内容质量下滑，你如何建立治理机制？",
+    type: "社区运营",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "小红书",
+    referenceAnswer: "定义质量维度与量化指标 → 机审+人审分级处置 → 优质内容加权分发 → 违规成本与公示 → 周期复盘与规则迭代。",
+    template: "标准 → 审核 → 加权 → 惩戒 → 迭代"
+  },
+  {
+    id: "q111",
+    title: "（哔哩哔哩）如何规划一个垂类内容的年度选题矩阵？",
+    type: "内容运营",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "哔哩哔哩",
+    referenceAnswer: "垂类用户画像与需求分层 → 选题池(常青/热点/系列) → 供给与创作者匹配 → 排期与资源位 → 数据回收调整配比。",
+    template: "画像 → 选题池 → 供给匹配 → 排期 → 调优"
+  },
+  {
+    id: "q112",
+    title: "（哔哩哔哩）如何用数据评估内容运营效果？",
+    type: "内容运营",
+    difficulty: "中等",
+    industry: "互联网",
+    company: "哔哩哔哩",
+    referenceAnswer: "北极星指标(播放/互动/关注转化) → 分渠道与内容类型归因 → 完播与互动率看质量 → 留存与回访看长期 → 实验对照定因果。",
+    template: "北极星 → 归因 → 质量指标 → 留存 → 实验"
+  },
+  {
+    id: "q113",
+    title: "（哔哩哔哩）UP 主投稿量下降，你会如何做运营干预？",
+    type: "内容运营",
+    difficulty: "简单",
+    industry: "互联网",
+    company: "哔哩哔哩",
+    referenceAnswer: "先分群定位(新手/腰部/头部) → 访谈找真实卡点(收益/流量/创作成本) → 针对性激励与工具支持 → 小范围试点验证 → 全量推广。",
+    template: "分群 → 访谈 → 激励工具 → 试点 → 推广"
+  },
+  {
+    id: "q114",
+    title: "（中国建筑）如何编制一个项目的施工进度计划并控制偏差？",
+    type: "工程管理",
+    difficulty: "中等",
+    industry: "国企",
+    company: "中国建筑",
+    referenceAnswer: "WBS 分解与工程量 → 关键路径法排计划 → 资源与工序穿插 → 进度对比(计划 vs 实际) → 纠偏(赶工/调序/增资源)。",
+    template: "WBS → 关键路径 → 穿插 → 对比 → 纠偏"
+  },
+  {
+    id: "q115",
+    title: "（中国建筑）项目成本超支，你会如何做成本管控？",
+    type: "工程管理",
+    difficulty: "困难",
+    industry: "国企",
+    company: "中国建筑",
+    referenceAnswer: "成本科目拆解与责任归属 → 量价分离分析超支点 → 材料损耗与分包结算核查 → 变更签证管理 → 月度成本例会与预警线。",
+    template: "拆解 → 量价分析 → 核查 → 变更管理 → 预警"
+  },
+  {
+    id: "q116",
+    title: "（中国建筑）如何处理施工中的设计变更与签证？",
+    type: "工程管理",
+    difficulty: "中等",
+    industry: "国企",
+    company: "中国建筑",
+    referenceAnswer: "变更发起与必要性论证 → 技术与成本影响评估 → 图纸与交底同步 → 签证资料留痕(影像/量单) → 结算主张与审计配合。",
+    template: "论证 → 影响评估 → 交底 → 留痕 → 结算"
+  },
+  {
+    id: "q117",
+    title: "（微软）设计一个支持千万级并发的短链服务，说明关键取舍。",
+    type: "系统设计",
+    difficulty: "困难",
+    industry: "外企",
+    company: "微软中国",
+    referenceAnswer: "发号器(雪花/号段)与 Base62 编码 → 读写分离与多级缓存 → 分库分表与热点 key → 301/302 取舍与统计异步化 → 容量与降级方案。",
+    template: "编码 → 缓存 → 分片 → 跳转取舍 → 容量"
+  },
+  {
+    id: "q118",
+    title: "（微软）如何设计一个多租户 SaaS 的权限与数据隔离方案？",
+    type: "系统设计",
+    difficulty: "困难",
+    industry: "外企",
+    company: "微软中国",
+    referenceAnswer: "隔离级别选择(库/表/行，按成本与合规) → RBAC/ABAC 模型 → 租户上下文透传与拦截 → 密钥与加密隔离 → 越权测试与审计。",
+    template: "隔离级别 → 权限模型 → 上下文 → 加密 → 审计"
+  },
+  {
+    id: "q119",
+    title: "（微软）设计一个分布式定时任务调度系统。",
+    type: "系统设计",
+    difficulty: "中等",
+    industry: "外企",
+    company: "微软中国",
+    referenceAnswer: "任务注册与 Cron 解析 → 调度中心选主与分片 → 触发与执行解耦(消息队列) → 幂等与失败重试 → 执行日志、告警与可视化。",
+    template: "注册 → 选主分片 → 解耦触发 → 幂等重试 → 监控"
+  },
+  {
+    id: "q120",
+    title: "（海康威视）简述卷积神经网络的基本组成与感受野概念。",
+    type: "算法基础",
+    difficulty: "中等",
+    industry: "制造业",
+    company: "海康威视",
+    referenceAnswer: "卷积/激活/池化/全连接的作用 → 权值共享与局部连接 → 感受野逐层累积公式 → 对检测任务尺度设计的影响。",
+    template: "组件作用 → 共享与局部 → 感受野 → 尺度设计"
+  },
+  {
+    id: "q121",
+    title: "（海康威视）目标检测中如何平衡精度与推理速度？",
+    type: "算法基础",
+    difficulty: "困难",
+    industry: "制造业",
+    company: "海康威视",
+    referenceAnswer: "骨干网络轻量化(深度可分离/MobileNet) → 输入分辨率与多尺度取舍 → 剪枝/量化/蒸馏 → 算子融合与硬件适配 → 端侧实测 mAP 与 FPS 曲线。",
+    template: "轻量骨干 → 分辨率 → 压缩 → 硬件适配 → 实测"
+  },
+  {
+    id: "q122",
+    title: "（海康威视）如何处理训练数据的类别不平衡问题？",
+    type: "算法基础",
+    difficulty: "中等",
+    industry: "制造业",
+    company: "海康威视",
+    referenceAnswer: "重采样(过采样/欠采样) → 损失加权(Focal Loss/Class Weight) → 数据增强与合成 → 分类型评估(P/R 与混淆矩阵) → 阈值调优。",
+    template: "重采样 → 损失加权 → 增强 → 分类评估 → 阈值"
+  },
+  {
+    id: "q123",
+    title: "（联合利华）讲一次你在压力下同时推进多个任务的经历。",
+    type: "行为面试 STAR",
+    difficulty: "中等",
+    industry: "外企",
+    company: "联合利华",
+    referenceAnswer: "情境与冲突(多任务/时间紧) → 我的优先级判断依据 → 具体协调与取舍动作 → 结果与他人的评价。",
+    template: "情境 → 判断 → 行动 → 结果"
+  },
+  {
+    id: "q124",
+    title: "（玛氏）举一个你说服他人接受你方案的例子。",
+    type: "行为面试 STAR",
+    difficulty: "中等",
+    industry: "快消",
+    company: "玛氏中国",
+    referenceAnswer: "对方立场与分歧点 → 我用数据/试点降低对方顾虑 → 沟通与让步策略 → 达成结果与长期影响。",
+    template: "分歧 → 证据 → 沟通 → 结果"
   }
 ]

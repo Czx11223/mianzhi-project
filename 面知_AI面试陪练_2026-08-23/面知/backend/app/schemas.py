@@ -22,6 +22,36 @@ class QuestionOut(ApiModel):
     company: str = ""  # 题目来源企业，校招通用题为空
     reference_answer: str = ""
     template: str = ""
+    job_family: str = ""  # 岗位族（v2 题库），如 backend / pm / civil
+    job_names: List[str] = []  # 精确适配的岗位名；空表示该族内通用
+
+
+class QuestionIn(ApiModel):
+    """后台新增/编辑题目入参：id 可留空（由后端生成）。"""
+
+    id: str = ""
+    title: str
+    type: str = "行为面试 STAR"
+    difficulty: str = "中等"
+    industry: str = "互联网"
+    company: str = ""
+    reference_answer: str = ""
+    template: str = ""
+    job_family: str = ""
+    job_names: List[str] = []
+
+
+class QuestionBatchIn(ApiModel):
+    """批量更新题目：只改传入的可选字段，None 表示保持原值。
+
+    job_family 传空字符串 "" 表示「清除归属、退回通用池」，与「不修改」(None) 区分。
+    """
+
+    ids: List[str] = []
+    job_family: Optional[str] = None
+    industry: Optional[str] = None
+    difficulty: Optional[str] = None
+    clear_job_names: bool = False
 
 
 class StartInterviewOut(ApiModel):
@@ -42,6 +72,21 @@ class JobConfig(ApiModel):
     question_types: List[str]
     answer_mode: str = "text"  # text | voice
     mode: str = "normal"       # normal | pressure
+    total_questions: int = 8
+    job_family: str = ""       # 岗位族（后端按岗位名解析），前端 mock 抽题复用
+
+
+class JobIn(ApiModel):
+    """后台新增/编辑岗位入参：id 可留空（由后端生成）。"""
+
+    id: str = ""
+    name: str
+    company: str = ""
+    industry: str = "互联网"
+    duration: int = 20
+    question_types: List[str] = []
+    answer_mode: str = "text"
+    mode: str = "normal"
     total_questions: int = 8
 
 

@@ -4,6 +4,7 @@ from ..db import get_db
 from ..models import Interview, Answer
 from ..schemas import DashboardOut, Dimension, GrowthPoint, InterviewHistory
 from ..services.analysis import grade_from_score
+from ..services.auth import get_current_user
 
 router = APIRouter(prefix="/api", tags=["growth"])
 
@@ -16,16 +17,13 @@ def _effective_score(i: Interview) -> int:
 
 
 @router.get("/growth", response_model=DashboardOut)
-def get_dashboard(db: Session = Depends(get_db)):
+def get_dashboard(db: Session = Depends(get_db), current_user: str | None = Depends(get_current_user)):
     # 只统计「有实际作答」的完成记录（过滤未完成/废弃的空会话），并按新到旧排列（最新在上）。
     # 注：Interview.answers 一对多，join 后用 distinct() 去重，避免同一场面试重复出现。
-    interviews = (
-        db.query(Interview)
-        .join(Answer)
-        .distinct()
-        .order_by(Interview.date.desc(), Interview.id.desc())
-        .all()
-    )
+    q = db.query(Interview).join(Answer).distinct()
+    if current_user:
+        q = q.filter(Interview.user_id == current_user)
+    interviews = q.order_by(Interview.date.desc(), Interview.id.desc()).all()
     if not interviews:
         # 无数据时返回空结构，前端将落入 mock 演示数据
         return DashboardOut(

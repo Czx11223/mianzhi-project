@@ -2,6 +2,7 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import api from '@/api'
+import { PcmRecorder } from '@/utils/audio'
 import type { JobConfig, QuestionItem, AnswerRecord, AnswerMode } from '@/types'
 import AppTimer from '@/components/AppTimer.vue'
 import AppSegmented from '@/components/AppSegmented.vue'
@@ -57,6 +58,7 @@ async function saveCurrent() {
     if (q.value?.id === cur.id) lastComment.value = rec // 保存完成时仍在本题才更新点评，避免串题
   } catch (e: any) {
     if (e?.status === 404) await load() // 会话失效重建
+    else error.value = `评分失败（${e?.status ?? '网络错误'}），文字已保留，可点击重试或继续下一题`
   } finally {
     saving.value = false
   }
@@ -97,17 +99,166 @@ const analysis = computed(() => {
 })
 
 let recTimer: number | undefined
-function toggleRecord() {
-  recording.value = !recording.value
-  if (recording.value) {
-    recordingSec.value = 0
-    recTimer = window.setInterval(() => recordingSec.value++, 1000)
-  } else {
-    if (recTimer) clearInterval(recTimer)
-    // 模拟 ASR 结果（真实环境由后端 /asr 返回），转写后立即自动保存并评分
-    currentAnswer.value = '我觉得这个岗位挺好的，然后我学过相关技术，然后做过类似项目，就是说比较有经验。'
-    saveCurrent()
+let recorder: PcmRecorder | null = null
+const transcribing = ref(false)
+let finalizing = false // 防止停止被重复触发时重复提交
+
+// 浏览器内置识别（Chrome / Edge 支持），在服务端未配置 ASR 或调用失败时作为真实转写兜底
+let recognition: any = null
+let browserTranscript = ''
+let browserRecError = ''
+
+function startBrowserRecognition() {
+  const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
+  browserTranscript = ''
+  browserRecError = ''
+  if (!SR) {
+    browserRecError = 'unsupported'
+    return
   }
+  try {
+    recognition = new SR()
+    recognition.lang = 'zh-CN'
+    recognition.continuous = true
+    recognition.interimResults = true
+    recognition.onresult = (e: any) => {
+      let s = ''
+      for (let i = 0; i < e.results.length; i++) s += e.results[i][0].transcript
+      browserTranscript = s.trim()
+    }
+    recognition.onerror = (ev: any) => { browserRecError = ev?.error || 'error' }
+    recognition.start()
+  } catch {
+    recognition = null
+    browserRecError = 'unsupported'
+  }
+}
+
+function stopBrowserRecognition() {
+  try { recognition?.stop() } catch { /* ignore */ }
+  recognition = null
+}
+
+// 浏览器识别的失败原因翻译成人话，便于用户当场判断怎么处理
+function browserErrorHint(): string {
+  switch (browserRecError) {
+    case '':
+      return '没有识别到语音内容，请靠近麦克风、说话清晰些'
+    case 'unsupported':
+      return '当前浏览器不支持语音识别，请改用 Edge / Chrome 或改用文字作答'
+    case 'not-allowed':
+    case 'service-not-allowed':
+      return '麦克风或语音识别权限被拒绝，请在浏览器地址栏左侧允许麦克风'
+    case 'network':
+      return '浏览器语音识别服务连不上（Chrome 依赖 Google 服务），建议换 Edge，或在设置中配置 ASR 服务'
+    case 'no-speech':
+      return '没有检测到说话声，请重试'
+    default:
+      return `浏览器识别失败（${browserRecError}）`
+  }
+}
+
+// 收尾：转写 → 提交评分。调用方（finishRecording）负责 finalizing 标记，保证只跑一次
+async function finalizeRecording(blob: Blob) {
+  try {
+    if (blob.size === 0) {
+      error.value = '没有录到声音，请重试（注意浏览器地址栏左侧的麦克风权限）'
+      return
+    }
+    transcribing.value = true
+    error.value = ''
+    let text = ''
+    let serverMessage = ''
+    // 录音阶段已直接采集 PCM 并编码为 8kHz 单声道 WAV（paraformer-8k-v2 的输入要求）
+    const upload = blob
+    const sharecode = new URLSearchParams(window.location.search).get('sharecode') || ''
+    try {
+      const res = await api.speechToText(upload, sharecode)
+      if (res.ok && res.text) {
+        text = res.text
+      } else {
+        serverMessage = res.message || ''
+        // 服务端未配置 / 识别失败 → 用浏览器识别结果（真实转写，不是假文本）
+        if (browserTranscript) text = browserTranscript
+      }
+    } catch {
+      if (browserTranscript) text = browserTranscript
+      else serverMessage = '语音转写请求失败'
+    } finally {
+      transcribing.value = false
+    }
+    if (text) {
+      currentAnswer.value = text
+      await saveCurrent() // 转写文本作为作答提交 → AI 点评走配置的大模型
+    } else {
+      // 两条路径都失败时，把服务端原因和浏览器原因都告诉用户
+      error.value = serverMessage ? `${serverMessage}；${browserErrorHint()}` : browserErrorHint()
+    }
+  } finally {
+    finalizing = false
+    recorder = null
+  }
+}
+
+// 语音作答：真实录音（直接采集 PCM → 8kHz WAV）→ 服务端 paraformer-8k-v2 转写
+// → 转写文本自动提交评分 → 失败时用浏览器内置识别兜底
+async function toggleRecord() {
+  if (recording.value) {
+    finishRecording()
+    return
+  }
+  try {
+    const r = new PcmRecorder()
+    await r.start()
+    recorder = r
+    finalizing = false
+    startBrowserRecognition()
+    recording.value = true
+    recordingSec.value = 0
+    recTimer = window.setInterval(() => {
+      recordingSec.value++
+      // 单题最长 2 分钟，避免忘记停止导致一直录
+      if (recordingSec.value >= 120) finishRecording()
+    }, 1000)
+  } catch (e: any) {
+    stopBrowserRecognition()
+    const name = e?.name || ''
+    if (name === 'NotAllowedError' || name === 'SecurityError') {
+      error.value = '麦克风权限被拒绝，请点击浏览器地址栏左侧的麦克风图标允许后重试'
+    } else if (name === 'NotFoundError') {
+      error.value = '没有检测到麦克风设备，请接入麦克风或改用文字作答'
+    } else {
+      error.value = '无法开始录音：' + (e?.message || '未知错误') + '，可改用文字作答'
+    }
+  }
+}
+
+// 停止录音：PcmRecorder 同步返回已采集音频，不再依赖浏览器的 onstop 回调
+async function finishRecording() {
+  if (finalizing) return
+  finalizing = true
+  recording.value = false
+  if (recTimer) { clearInterval(recTimer); recTimer = undefined }
+  stopBrowserRecognition()
+
+  const r = recorder
+  recorder = null
+  if (!r) { finalizing = false; return }
+
+  const { blob, duration, peak } = r.stop(8000)
+  // 录音体检：太短或几乎没声音时直接给出明确提示，不去请求转写服务
+  if (duration < 0.4) {
+    error.value = `录音时间太短（${duration.toFixed(1)} 秒），请至少说一句完整的话再停止`
+    finalizing = false
+    return
+  }
+  if (peak < 0.005) {
+    error.value = '没有采集到有效音量：请确认麦克风没有被静音、系统输入设备选择正确，再试一次'
+    finalizing = false
+    return
+  }
+  // 浏览器内置识别若已拿到文本，可作为服务端失败时的兜底
+  await finalizeRecording(blob)
 }
 
 function next() {
@@ -233,9 +384,9 @@ onMounted(load)
             <span v-for="n in 9" :key="n" class="w-1 rounded-full bg-primary transition-all"
               :style="{ height: recording ? (8 + ((n * 7 + recordingSec * 3) % 32)) + 'px' : '8px', opacity: recording ? 1 : 0.3 }" />
           </div>
-          <p class="text-caption text-ink-secondary">{{ recording ? `录音中 ${recordingSec}s` : '点击下方按钮开始录音，结束后自动转写并评分' }}</p>
-          <AppButton :variant="recording ? 'danger' : 'primary'" size="md" @click="toggleRecord">
-            {{ recording ? '停止录音' : '开始录音' }}
+          <p class="text-caption text-ink-secondary">{{ recording ? `录音中 ${recordingSec}s` : (transcribing ? '转写中…' : (saving ? 'AI 点评生成中，请稍候…' : '点击下方按钮开始录音，结束后自动转写并提交 AI 评分')) }}</p>
+          <AppButton :variant="recording ? 'danger' : 'primary'" size="md" :disabled="transcribing" @click="toggleRecord">
+            {{ recording ? '停止录音' : (transcribing ? '转写中…' : '开始录音') }}
           </AppButton>
           <textarea v-if="currentAnswer" v-model="currentAnswer" class="w-11/12 min-h-[60px] p-3 bg-card border border-line rounded-md text-body" />
         </div>
